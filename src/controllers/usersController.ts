@@ -57,6 +57,6 @@ export async function getUser(req: Request, res: Response, next: NextFunction): 
     }
     res.json({ success: true, user });
   } catch (err) {
-    next(err); // forwards to error handler
+    next(err); // forwards to the error handler
   }
 }
